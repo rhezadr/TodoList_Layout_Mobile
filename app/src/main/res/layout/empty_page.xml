@@ -29,7 +29,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="83dp"
         android:layout_marginBottom="64dp"
-        android:layout_centerVertical="true"
         app:cardBackgroundColor="@color/cardview_light_background"
         app:cardCornerRadius="10dp"
         app:cardElevation="4dp">
@@ -45,13 +44,14 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_add_circle_outline_24"
                 app:tint="@color/black" />
+
             <TextView
                 android:id="@+id/createText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/plusButton"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_below="@+id/plusButton"
                 android:text="Create"
                 android:textColor="@color/black"
                 android:textSize="16sp"
