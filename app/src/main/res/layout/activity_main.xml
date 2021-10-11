@@ -29,7 +29,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/CardView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:layout_marginTop="83dp"
         app:cardBackgroundColor="@color/cardview_light_background"
         app:cardCornerRadius="10dp"
@@ -40,23 +40,30 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingEnd="8dp">
+            android:id="@+id/layoutTask"
+            android:layout_marginBottom="75dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/taskList"
+                android:id="@+id/tasksRecyclerView"
                 android:nestedScrollingEnabled="true"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:layout_gravity="bottom">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/taskList"
                 android:layout_alignParentRight="true"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
